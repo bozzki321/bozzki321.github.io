@@ -7,7 +7,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body {
-  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(bozzki321.github.io/SVG/banner2.jpg);
+  background-image:linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)) ,url(https://bozzki321.github.io/img/svg/banner2.jpg);
 }
 ::-webkit-scrollbar {
     width: 10px;
