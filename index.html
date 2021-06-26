@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolio</title>
+    	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="#" ><img src="SVG/Anonymous.svg" alt=""> </a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+  <div class="banner">
+    <div class="span-text">
+      <h1 class="title" data-aos="fade-up" data-aos-duration="1000">
+        <span class="banner-span">Welcome To <br> My Web Portfolio.</span>
+      </h1>
+    </div>
+  </div>
+  <div class="about">
+      <div class="content">
+          <div class="abt-title" id="about"> <h1>About Me.</h1></div> <hr> <br>
+              <img class="profile-image" src="SVG/profile.jpg" alt="profile pic"> <br>
+              <p> I am John Paul Rada De Guzman,an IT senior high school student <br> from  San Jose del Monte National Hign School
+              who loves making <br> website to improve my skills in web developing,and to provide useful <br> informations
+               for the people in the internet.I always spent my free time <br> on improving my skills in web developing.</p>
+      </div> <br> <br> <br> <br><br><br><br>
+</div>
+  <div class="skills">
+    <div class="content">
+      <div class="skls-title" id="skills"> <h1>Skills.</h1> <br> <hr> <br>
+        <div class="skill-container">
+          	<img class="skill-icon" src="svg/html.svg" alt="html"> <br>
+							<h2 class="skill-txt">HTML</h2>
+        </div>
+        <div class="skill-container">
+          <img class="skill-icon" src="svg/css.svg" alt="html"> <br>
+              <h2 class="skill-txt">CSS</h2>
+        </div>
+        <div class="skill-container">
+          <img class="skill-icon" src="svg/js.svg" alt="html"> <br>
+              <h2 class="skill-txt">JS</h2>
+        </div>
+        <div class="skill-container">
+          <img class="skill-icon" src="svg/php.svg" alt="html"> <br>
+              <h2 class="skill-txt">PHP</h2>
+        </div>
+        <div class="skill-container">
+          <img class="skill-icon" src="svg/sql.svg" alt="html"> <br>
+              <h2 class="skill-txt">MYSQL</h2>
+        </div>
+			</div>
+    </div>
+  </div>
+</div> <br><br>
+
+<div class="contacts">
+  <div class="content">
+      <h1>Contact</h1><hr>
+      <p>107888080268.ictcp11.deguzman@gmail.com</p> <br><br><br><br><br><br>
+      <h5>You Can Find Me On:</h5><br>
+      <a href="https://www.facebook.com/bozzki178"> <i class="fab fa-facebook-f"></i> Facebook</a><br>
+      <a href="https://mail.google.com/mail/u/3/?pli=1#inbox?compose=new"><i class="fab fa-google"></i>   Gmail</a> <br>
+      <a href="https://github.com/bozzki321"><i class="fab fa-github"></i> Github</a>
+  </div>
+</div>
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+</body>
+</html>
